@@ -5,7 +5,7 @@ from pathlib import Path
 from .models import Fill, IntelligenceEvent, Signal
 
 SCHEMA = """
-CREATE TABLE IF NOT EXISTS events(id INTEGER PRIMARY KEY, content_hash TEXT UNIQUE NOT NULL, source TEXT NOT NULL, symbol TEXT NOT NULL, published_at TEXT NOT NULL, payload TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS events(id INTEGER PRIMARY KEY, content_hash TEXT NOT NULL, source TEXT NOT NULL, symbol TEXT NOT NULL, published_at TEXT NOT NULL, payload TEXT NOT NULL, UNIQUE(content_hash, symbol));
 CREATE TABLE IF NOT EXISTS signals(id INTEGER PRIMARY KEY, symbol TEXT NOT NULL, timestamp TEXT NOT NULL, side TEXT NOT NULL, score REAL NOT NULL, payload TEXT NOT NULL);
 CREATE TABLE IF NOT EXISTS fills(id INTEGER PRIMARY KEY, symbol TEXT NOT NULL, timestamp TEXT NOT NULL, reason TEXT NOT NULL, realised_pnl REAL NOT NULL, payload TEXT NOT NULL);
 CREATE TABLE IF NOT EXISTS experiments(id INTEGER PRIMARY KEY, name TEXT UNIQUE NOT NULL, status TEXT NOT NULL, config_json TEXT NOT NULL, net_pnl REAL NOT NULL DEFAULT 0, max_drawdown REAL NOT NULL DEFAULT 0);
@@ -16,17 +16,18 @@ CREATE INDEX IF NOT EXISTS idx_fills_time ON fills(timestamp);
 
 
 class Ledger:
-    def __init__(self, path: str | Path = "data/agni.db"):
+    def __init__(self, path: str | Path = "data/edgesignal.db"):
         self.path = Path(path)
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self.db = sqlite3.connect(self.path)
         self.db.executescript(SCHEMA)
         self.db.execute("PRAGMA optimize")
 
-    def event(self, e: IntelligenceEvent) -> None:
-        self.db.execute("INSERT OR IGNORE INTO events(content_hash,source,symbol,published_at,payload) VALUES(?,?,?,?,?)",
+    def event(self, e: IntelligenceEvent) -> int:
+        cursor = self.db.execute("INSERT OR IGNORE INTO events(content_hash,source,symbol,published_at,payload) VALUES(?,?,?,?,?)",
             (e.content_hash,e.source,e.symbol,e.published_at.isoformat(),json.dumps(e.__dict__,default=str)))
         self.db.commit()
+        return cursor.rowcount
 
     def signal(self, s: Signal) -> None:
         self.db.execute("INSERT INTO signals(symbol,timestamp,side,score,payload) VALUES(?,?,?,?,?)",

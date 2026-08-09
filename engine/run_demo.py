@@ -4,11 +4,11 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from agni import EngineConfig, TradingEngine
-from agni.alerts import ConsoleAlert
-from agni.ledger import Ledger
-from agni.models import MarketBar
-from agni.sentiment import make_event
+from edgesignal import EngineConfig, TradingEngine
+from edgesignal.alerts import ConsoleAlert
+from edgesignal.ledger import Ledger
+from edgesignal.models import MarketBar
+from edgesignal.sentiment import make_event
 
 
 def main() -> None:

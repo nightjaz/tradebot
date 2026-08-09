@@ -35,6 +35,7 @@ class IntelligenceEvent:
     sentiment: float
     credibility: float
     content_hash: str
+    url: str = ""
 
 
 @dataclass(frozen=True)

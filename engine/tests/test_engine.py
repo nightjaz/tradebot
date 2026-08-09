@@ -2,13 +2,13 @@ import tempfile
 import unittest
 from datetime import datetime, timedelta
 
-from agni.config import EngineConfig
-from agni.costs import IndianEquityIntradayCosts
-from agni.ledger import Ledger
-from agni.models import MarketBar, Portfolio
-from agni.orchestrator import TradingEngine
-from agni.risk import RiskManager
-from agni.sentiment import content_hash, make_event
+from edgesignal.config import EngineConfig
+from edgesignal.costs import IndianEquityIntradayCosts
+from edgesignal.ledger import Ledger
+from edgesignal.models import MarketBar, Portfolio
+from edgesignal.orchestrator import TradingEngine
+from edgesignal.risk import RiskManager
+from edgesignal.sentiment import content_hash, make_event
 
 
 class EngineTests(unittest.TestCase):

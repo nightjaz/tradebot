@@ -1,0 +1,24 @@
+{
+  "aliases": {
+    "RELIANCE": ["RELIANCE", "Reliance Industries", "RIL"],
+    "TCS": ["TCS", "Tata Consultancy Services"],
+    "HDFCBANK": ["HDFCBANK", "HDFC Bank"],
+    "ICICIBANK": ["ICICIBANK", "ICICI Bank"],
+    "SBIN": ["SBIN", "State Bank of India", "SBI"],
+    "INFY": ["INFY", "Infosys"],
+    "BHARTIARTL": ["BHARTIARTL", "Bharti Airtel", "Airtel"],
+    "ITC": ["ITC Limited", "ITC Ltd", "NSE:ITC"],
+    "LT": ["Larsen & Toubro", "L&T"],
+    "TATAMOTORS": ["TATAMOTORS", "Tata Motors"],
+    "MARUTI": ["MARUTI", "Maruti Suzuki"],
+    "AXISBANK": ["AXISBANK", "Axis Bank"],
+    "KOTAKBANK": ["KOTAKBANK", "Kotak Mahindra Bank", "Kotak Bank"],
+    "SUNPHARMA": ["SUNPHARMA", "Sun Pharmaceutical", "Sun Pharma"],
+    "TATASTEEL": ["TATASTEEL", "Tata Steel"],
+    "WIPRO": ["WIPRO", "Wipro"],
+    "HCLTECH": ["HCLTECH", "HCL Technologies", "HCL Tech"],
+    "BAJFINANCE": ["BAJFINANCE", "Bajaj Finance"],
+    "ASIANPAINT": ["ASIANPAINT", "Asian Paints"],
+    "M&M": ["NSE:M&M", "Mahindra & Mahindra"]
+  }
+}

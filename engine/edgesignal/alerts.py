@@ -26,8 +26,8 @@ class WebhookAlert:
 
 
 def signal_message(signal: Signal) -> str:
-    return f"AGNI {signal.side.value} {signal.symbol} | score {signal.score:.1f} | entry {signal.entry:.2f} | stop {signal.stop:.2f} | target {signal.target:.2f}"
+    return f"EdgeSignal {signal.side.value} {signal.symbol} | score {signal.score:.1f} | entry {signal.entry:.2f} | stop {signal.stop:.2f} | target {signal.target:.2f}"
 
 
 def fill_message(fill: Fill) -> str:
-    return f"AGNI FILL {fill.symbol} | {fill.quantity} @ {fill.price:.2f} | {fill.reason} | P&L {fill.realised_pnl:.2f}"
+    return f"EdgeSignal FILL {fill.symbol} | {fill.quantity} @ {fill.price:.2f} | {fill.reason} | P&L {fill.realised_pnl:.2f}"

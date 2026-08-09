@@ -13,22 +13,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AGNI — Intraday Intelligence",
+  title: "EdgeSignal — Intraday Intelligence",
   description: "Social attention, news sentiment, and market-confirmed intraday signals for India.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
   },
   openGraph: {
-    title: "AGNI — Intraday Intelligence",
+    title: "EdgeSignal — Intraday Intelligence",
     description: "Find the signal before the crowd.",
-    images: ["/og.png"],
+    images: ["/og-edgesignal.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AGNI — Intraday Intelligence",
+    title: "EdgeSignal — Intraday Intelligence",
     description: "Find the signal before the crowd.",
-    images: ["/og.png"],
+    images: ["/og-edgesignal.png"],
   },
 };
 

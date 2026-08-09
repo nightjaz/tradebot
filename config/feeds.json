@@ -1,0 +1,47 @@
+{
+  "policy": "Store feed metadata, headlines and excerpts only. Do not scrape or republish full articles.",
+  "feeds": [
+    {
+      "name": "NSE Corporate Information",
+      "url": "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml",
+      "credibility": 1.0,
+      "category": "exchange",
+      "enabled": false
+    },
+    {
+      "name": "SEBI",
+      "url": "https://www.sebi.gov.in/sebirss.xml",
+      "credibility": 1.0,
+      "category": "regulatory",
+      "enabled": true
+    },
+    {
+      "name": "Livemint Markets",
+      "url": "https://www.livemint.com/rss/markets",
+      "credibility": 0.82,
+      "category": "markets",
+      "enabled": true
+    },
+    {
+      "name": "Livemint Companies",
+      "url": "https://www.livemint.com/rss/companies",
+      "credibility": 0.82,
+      "category": "companies",
+      "enabled": true
+    },
+    {
+      "name": "Indian Express Markets",
+      "url": "https://indianexpress.com/section/business/market/feed/",
+      "credibility": 0.78,
+      "category": "markets",
+      "enabled": true
+    },
+    {
+      "name": "Economic Times Markets",
+      "url": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
+      "credibility": 0.82,
+      "category": "markets",
+      "enabled": true
+    }
+  ]
+}

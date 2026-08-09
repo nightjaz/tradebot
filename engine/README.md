@@ -1,4 +1,4 @@
-# AGNI engine
+# EdgeSignal engine
 
 Research/paper-trading engine for intraday NSE strategies. It uses only information available at the bar timestamp, fills entries on the next bar, models fees and adverse slippage, and stores every event, signal and fill in SQLite.
 

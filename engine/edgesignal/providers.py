@@ -17,7 +17,7 @@ class CsvBarProvider:
 
 class RedditPublicProvider:
     """Read-only adapter for public subreddit JSON; use only where permitted."""
-    def __init__(self, subreddit: str, user_agent: str="AGNI research bot/0.1"):
+    def __init__(self, subreddit: str, user_agent: str="EdgeSignal research bot/0.2"):
         self.url=f"https://www.reddit.com/r/{subreddit}/new.json?limit=100"; self.user_agent=user_agent
     def posts(self):
         req=Request(self.url,headers={"User-Agent":self.user_agent})
