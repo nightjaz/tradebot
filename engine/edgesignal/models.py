@@ -36,6 +36,7 @@ class IntelligenceEvent:
     credibility: float
     content_hash: str
     url: str = ""
+    metadata: dict[str, float | int | str] = field(default_factory=dict)
 
 
 @dataclass(frozen=True)

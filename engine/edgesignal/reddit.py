@@ -126,7 +126,10 @@ class RedditIngestor:
                 quality *= 0.35
             # Keep only a compact excerpt; usernames are never collected.
             excerpt = post.body[:280]
+            metadata = {"score": post.score, "comments": post.comments,
+                "upvote_ratio": post.upvote_ratio, "engagement": round(engagement, 4),
+                "promotional": int(bool(PROMOTIONAL.search(analysis_text)))}
             for symbol in symbols:
                 events.append(make_event(f"reddit:r/{post.subreddit}", post.source_id, symbol,
-                    post.published_at, post.title, excerpt, quality, ingested_at, post.url))
+                    post.published_at, post.title, excerpt, quality, ingested_at, post.url, metadata))
         return events

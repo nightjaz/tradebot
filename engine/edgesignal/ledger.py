@@ -36,6 +36,20 @@ class Ledger:
         self.db.commit()
         return cursor.rowcount
 
+    def load_events(self, source_like: str | None = None) -> list[IntelligenceEvent]:
+        if source_like is None:
+            rows = self.db.execute("SELECT payload FROM events ORDER BY published_at").fetchall()
+        else:
+            rows = self.db.execute("SELECT payload FROM events WHERE source LIKE ? ORDER BY published_at",
+                (source_like,)).fetchall()
+        events = []
+        for (raw,) in rows:
+            payload = json.loads(raw)
+            payload["published_at"] = datetime.fromisoformat(payload["published_at"])
+            payload["ingested_at"] = datetime.fromisoformat(payload["ingested_at"])
+            events.append(IntelligenceEvent(**payload))
+        return events
+
     def signal(self, s: Signal) -> None:
         self.db.execute("INSERT INTO signals(symbol,timestamp,side,score,payload) VALUES(?,?,?,?,?)",
             (s.symbol,s.timestamp.isoformat(),s.side.value,s.score,json.dumps(s.__dict__,default=str)))

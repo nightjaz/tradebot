@@ -23,8 +23,8 @@ def lexical_sentiment(text: str) -> float:
 
 def make_event(source: str, source_id: str, symbol: str, published_at: datetime,
                title: str, body: str, credibility: float, ingested_at: datetime | None = None,
-               url: str = "") -> IntelligenceEvent:
+               url: str = "", metadata: dict[str, float | int | str] | None = None) -> IntelligenceEvent:
     text = f"{title} {body}"
     return IntelligenceEvent(source, source_id, symbol.upper(), published_at,
         ingested_at or datetime.now(published_at.tzinfo), title, body,
-        lexical_sentiment(text), max(0.0, min(1.0, credibility)), content_hash(text), url)
+        lexical_sentiment(text), max(0.0, min(1.0, credibility)), content_hash(text), url, metadata or {})
