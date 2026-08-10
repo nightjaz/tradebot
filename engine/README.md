@@ -23,3 +23,11 @@ python engine/ingest_reddit.py
 ```
 
 The allowlist and credibility priors are in `config/reddit.json`. Reddit excerpts expire after 14 days. Reddit content is not a model-training dataset; it is a low-trust intraday feature that still requires market-price confirmation.
+
+## Blog connector
+
+Curated RSS/Atom sources are configured in `config/blogs.json`. The connector never scrapes full articles, stores at most a 280-character feed excerpt, rejects stale posts, caps blog credibility below official news, and penalizes promotional language.
+
+```powershell
+python engine/ingest_blogs.py
+```

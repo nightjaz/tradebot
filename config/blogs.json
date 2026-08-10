@@ -1,0 +1,37 @@
+{
+  "retention_days": 30,
+  "blogs": [
+    {
+      "name": "Zerodha Z-Connect",
+      "url": "https://zerodha.com/z-connect/feed/",
+      "credibility": 0.62,
+      "max_age_hours": 168,
+      "category": "broker-analysis",
+      "enabled": true
+    },
+    {
+      "name": "Capitalmind",
+      "url": "https://www.capitalmind.in/feed/",
+      "credibility": 0.62,
+      "max_age_hours": 168,
+      "category": "market-analysis",
+      "enabled": true
+    },
+    {
+      "name": "Safal Niveshak",
+      "url": "https://www.safalniveshak.com/feed/",
+      "credibility": 0.48,
+      "max_age_hours": 336,
+      "category": "investing-analysis",
+      "enabled": true
+    },
+    {
+      "name": "TradeKaizen",
+      "url": "https://www.tradekaizen.in/blogs/feed.xml",
+      "credibility": 0.35,
+      "max_age_hours": 72,
+      "category": "trading-analysis",
+      "enabled": true
+    }
+  ]
+}
