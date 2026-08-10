@@ -10,3 +10,16 @@ python -m unittest discover -s engine/tests
 ```
 
 External data and execution are adapters. Do not connect a live broker until the paper-trading acceptance gate is passed and the broker's current API/algo requirements have been confirmed.
+
+## Reddit connector
+
+Reddit ingestion is OAuth-only and keeps no usernames. Register approved Data API access, then set these variables locally (never commit their values):
+
+```powershell
+$env:REDDIT_CLIENT_ID='...'
+$env:REDDIT_CLIENT_SECRET='...'
+$env:REDDIT_USER_AGENT='windows:edgesignal.research:v0.3 (by /u/your_username)'
+python engine/ingest_reddit.py
+```
+
+The allowlist and credibility priors are in `config/reddit.json`. Reddit excerpts expire after 14 days. Reddit content is not a model-training dataset; it is a low-trust intraday feature that still requires market-price confirmation.

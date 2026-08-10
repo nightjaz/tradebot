@@ -1,0 +1,8 @@
+{
+  "retention_days": 14,
+  "subreddits": [
+    {"name": "IndianStockMarket", "credibility": 0.45, "limit": 50, "enabled": true},
+    {"name": "IndiaInvestments", "credibility": 0.58, "limit": 50, "enabled": true},
+    {"name": "IndianStreetBets", "credibility": 0.30, "limit": 50, "enabled": true}
+  ]
+}

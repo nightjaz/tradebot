@@ -1,5 +1,6 @@
 import json
 import sqlite3
+from datetime import datetime
 from pathlib import Path
 
 from .models import Fill, IntelligenceEvent, Signal
@@ -26,6 +27,12 @@ class Ledger:
     def event(self, e: IntelligenceEvent) -> int:
         cursor = self.db.execute("INSERT OR IGNORE INTO events(content_hash,source,symbol,published_at,payload) VALUES(?,?,?,?,?)",
             (e.content_hash,e.source,e.symbol,e.published_at.isoformat(),json.dumps(e.__dict__,default=str)))
+        self.db.commit()
+        return cursor.rowcount
+
+    def prune_events(self, source_like: str, before: datetime) -> int:
+        cursor = self.db.execute("DELETE FROM events WHERE source LIKE ? AND published_at < ?",
+            (source_like, before.isoformat()))
         self.db.commit()
         return cursor.rowcount
 
