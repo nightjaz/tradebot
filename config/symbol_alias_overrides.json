@@ -1,0 +1,22 @@
+{
+  "RELIANCE": ["Reliance Industries", "RIL"],
+  "TCS": ["Tata Consultancy Services"],
+  "HDFCBANK": ["HDFC Bank"],
+  "ICICIBANK": ["ICICI Bank"],
+  "SBIN": ["State Bank of India", "SBI"],
+  "INFY": ["Infosys"],
+  "BHARTIARTL": ["Bharti Airtel", "Airtel"],
+  "ITC": ["ITC Limited", "ITC Ltd"],
+  "LT": ["Larsen & Toubro", "L&T"],
+  "TATAMOTORS": ["Tata Motors"],
+  "MARUTI": ["Maruti Suzuki"],
+  "AXISBANK": ["Axis Bank"],
+  "KOTAKBANK": ["Kotak Mahindra Bank", "Kotak Bank"],
+  "SUNPHARMA": ["Sun Pharmaceutical", "Sun Pharma"],
+  "TATASTEEL": ["Tata Steel"],
+  "WIPRO": ["Wipro"],
+  "HCLTECH": ["HCL Technologies", "HCL Tech"],
+  "BAJFINANCE": ["Bajaj Finance"],
+  "ASIANPAINT": ["Asian Paints"],
+  "M&M": ["Mahindra & Mahindra"]
+}

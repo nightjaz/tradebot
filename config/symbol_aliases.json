@@ -1,24 +1,1386 @@
 {
+  "universe": "NIFTY 200",
+  "constituent_count": 200,
+  "snapshot_date": "2026-08-10",
+  "source": "https://www.niftyindices.com/IndexConstituent/ind_nifty200list.csv",
   "aliases": {
-    "RELIANCE": ["RELIANCE", "Reliance Industries", "RIL"],
-    "TCS": ["TCS", "Tata Consultancy Services"],
-    "HDFCBANK": ["HDFCBANK", "HDFC Bank"],
-    "ICICIBANK": ["ICICIBANK", "ICICI Bank"],
-    "SBIN": ["SBIN", "State Bank of India", "SBI"],
-    "INFY": ["INFY", "Infosys"],
-    "BHARTIARTL": ["BHARTIARTL", "Bharti Airtel", "Airtel"],
-    "ITC": ["ITC Limited", "ITC Ltd", "NSE:ITC"],
-    "LT": ["Larsen & Toubro", "L&T"],
-    "TATAMOTORS": ["TATAMOTORS", "Tata Motors"],
-    "MARUTI": ["MARUTI", "Maruti Suzuki"],
-    "AXISBANK": ["AXISBANK", "Axis Bank"],
-    "KOTAKBANK": ["KOTAKBANK", "Kotak Mahindra Bank", "Kotak Bank"],
-    "SUNPHARMA": ["SUNPHARMA", "Sun Pharmaceutical", "Sun Pharma"],
-    "TATASTEEL": ["TATASTEEL", "Tata Steel"],
-    "WIPRO": ["WIPRO", "Wipro"],
-    "HCLTECH": ["HCLTECH", "HCL Technologies", "HCL Tech"],
-    "BAJFINANCE": ["BAJFINANCE", "Bajaj Finance"],
-    "ASIANPAINT": ["ASIANPAINT", "Asian Paints"],
-    "M&M": ["NSE:M&M", "Mahindra & Mahindra"]
+    "360ONE": [
+      "360 ONE WAM Ltd.",
+      "360 ONE WAM",
+      "NSE:360ONE",
+      "$360ONE",
+      "360ONE"
+    ],
+    "ABB": [
+      "ABB India Ltd.",
+      "ABB India",
+      "NSE:ABB",
+      "$ABB",
+      "ABB"
+    ],
+    "APLAPOLLO": [
+      "APL Apollo Tubes Ltd.",
+      "APL Apollo Tubes",
+      "NSE:APLAPOLLO",
+      "$APLAPOLLO",
+      "APLAPOLLO"
+    ],
+    "AUBANK": [
+      "AU Small Finance Bank Ltd.",
+      "AU Small Finance Bank",
+      "NSE:AUBANK",
+      "$AUBANK",
+      "AUBANK"
+    ],
+    "ADANIENSOL": [
+      "Adani Energy Solutions Ltd.",
+      "Adani Energy Solutions",
+      "NSE:ADANIENSOL",
+      "$ADANIENSOL",
+      "ADANIENSOL"
+    ],
+    "ADANIENT": [
+      "Adani Enterprises Ltd.",
+      "Adani Enterprises",
+      "NSE:ADANIENT",
+      "$ADANIENT",
+      "ADANIENT"
+    ],
+    "ADANIGREEN": [
+      "Adani Green Energy Ltd.",
+      "Adani Green Energy",
+      "NSE:ADANIGREEN",
+      "$ADANIGREEN",
+      "ADANIGREEN"
+    ],
+    "ADANIPORTS": [
+      "Adani Ports and Special Economic Zone Ltd.",
+      "Adani Ports and Special Economic Zone",
+      "NSE:ADANIPORTS",
+      "$ADANIPORTS",
+      "ADANIPORTS"
+    ],
+    "ADANIPOWER": [
+      "Adani Power Ltd.",
+      "Adani Power",
+      "NSE:ADANIPOWER",
+      "$ADANIPOWER",
+      "ADANIPOWER"
+    ],
+    "ATGL": [
+      "Adani Total Gas Ltd.",
+      "Adani Total Gas",
+      "NSE:ATGL",
+      "$ATGL",
+      "ATGL"
+    ],
+    "ABCAPITAL": [
+      "Aditya Birla Capital Ltd.",
+      "Aditya Birla Capital",
+      "NSE:ABCAPITAL",
+      "$ABCAPITAL",
+      "ABCAPITAL"
+    ],
+    "ALKEM": [
+      "Alkem Laboratories Ltd.",
+      "Alkem Laboratories",
+      "NSE:ALKEM",
+      "$ALKEM",
+      "ALKEM"
+    ],
+    "AMBUJACEM": [
+      "Ambuja Cements Ltd.",
+      "Ambuja Cements",
+      "NSE:AMBUJACEM",
+      "$AMBUJACEM",
+      "AMBUJACEM"
+    ],
+    "APOLLOHOSP": [
+      "Apollo Hospitals Enterprise Ltd.",
+      "Apollo Hospitals Enterprise",
+      "NSE:APOLLOHOSP",
+      "$APOLLOHOSP",
+      "APOLLOHOSP"
+    ],
+    "ASHOKLEY": [
+      "Ashok Leyland Ltd.",
+      "Ashok Leyland",
+      "NSE:ASHOKLEY",
+      "$ASHOKLEY",
+      "ASHOKLEY"
+    ],
+    "ASIANPAINT": [
+      "Asian Paints Ltd.",
+      "Asian Paints",
+      "NSE:ASIANPAINT",
+      "$ASIANPAINT",
+      "ASIANPAINT"
+    ],
+    "ASTRAL": [
+      "Astral Ltd.",
+      "Astral",
+      "NSE:ASTRAL",
+      "$ASTRAL"
+    ],
+    "AUROPHARMA": [
+      "Aurobindo Pharma Ltd.",
+      "Aurobindo Pharma",
+      "NSE:AUROPHARMA",
+      "$AUROPHARMA",
+      "AUROPHARMA"
+    ],
+    "DMART": [
+      "Avenue Supermarts Ltd.",
+      "Avenue Supermarts",
+      "NSE:DMART",
+      "$DMART",
+      "DMART"
+    ],
+    "AXISBANK": [
+      "Axis Bank Ltd.",
+      "Axis Bank",
+      "NSE:AXISBANK",
+      "$AXISBANK",
+      "AXISBANK"
+    ],
+    "BSE": [
+      "BSE Ltd.",
+      "NSE:BSE",
+      "$BSE"
+    ],
+    "BAJAJ-AUTO": [
+      "Bajaj Auto Ltd.",
+      "Bajaj Auto",
+      "NSE:BAJAJ-AUTO",
+      "$BAJAJ-AUTO",
+      "BAJAJ-AUTO"
+    ],
+    "BAJFINANCE": [
+      "Bajaj Finance Ltd.",
+      "Bajaj Finance",
+      "NSE:BAJFINANCE",
+      "$BAJFINANCE",
+      "BAJFINANCE"
+    ],
+    "BAJAJFINSV": [
+      "Bajaj Finserv Ltd.",
+      "Bajaj Finserv",
+      "NSE:BAJAJFINSV",
+      "$BAJAJFINSV",
+      "BAJAJFINSV"
+    ],
+    "BAJAJHLDNG": [
+      "Bajaj Holdings & Investment Ltd.",
+      "Bajaj Holdings & Investment",
+      "NSE:BAJAJHLDNG",
+      "$BAJAJHLDNG",
+      "BAJAJHLDNG"
+    ],
+    "BANKBARODA": [
+      "Bank of Baroda",
+      "NSE:BANKBARODA",
+      "$BANKBARODA",
+      "BANKBARODA"
+    ],
+    "BANKINDIA": [
+      "Bank of India",
+      "NSE:BANKINDIA",
+      "$BANKINDIA",
+      "BANKINDIA"
+    ],
+    "BDL": [
+      "Bharat Dynamics Ltd.",
+      "Bharat Dynamics",
+      "NSE:BDL",
+      "$BDL",
+      "BDL"
+    ],
+    "BEL": [
+      "Bharat Electronics Ltd.",
+      "Bharat Electronics",
+      "NSE:BEL",
+      "$BEL",
+      "BEL"
+    ],
+    "BHARATFORG": [
+      "Bharat Forge Ltd.",
+      "Bharat Forge",
+      "NSE:BHARATFORG",
+      "$BHARATFORG",
+      "BHARATFORG"
+    ],
+    "BHEL": [
+      "Bharat Heavy Electricals Ltd.",
+      "Bharat Heavy Electricals",
+      "NSE:BHEL",
+      "$BHEL",
+      "BHEL"
+    ],
+    "BPCL": [
+      "Bharat Petroleum Corporation Ltd.",
+      "Bharat Petroleum Corporation",
+      "NSE:BPCL",
+      "$BPCL",
+      "BPCL"
+    ],
+    "BHARTIARTL": [
+      "Bharti Airtel Ltd.",
+      "Bharti Airtel",
+      "NSE:BHARTIARTL",
+      "$BHARTIARTL",
+      "BHARTIARTL",
+      "Airtel"
+    ],
+    "GROWW": [
+      "Billionbrains Garage Ventures Ltd.",
+      "Billionbrains Garage Ventures",
+      "NSE:GROWW",
+      "$GROWW",
+      "GROWW"
+    ],
+    "BIOCON": [
+      "Biocon Ltd.",
+      "Biocon",
+      "NSE:BIOCON",
+      "$BIOCON"
+    ],
+    "BLUESTARCO": [
+      "Blue Star Ltd.",
+      "Blue Star",
+      "NSE:BLUESTARCO",
+      "$BLUESTARCO",
+      "BLUESTARCO"
+    ],
+    "BOSCHLTD": [
+      "Bosch Ltd.",
+      "Bosch",
+      "NSE:BOSCHLTD",
+      "$BOSCHLTD",
+      "BOSCHLTD"
+    ],
+    "BRITANNIA": [
+      "Britannia Industries Ltd.",
+      "Britannia Industries",
+      "NSE:BRITANNIA",
+      "$BRITANNIA",
+      "BRITANNIA"
+    ],
+    "CGPOWER": [
+      "CG Power and Industrial Solutions Ltd.",
+      "CG Power and Industrial Solutions",
+      "NSE:CGPOWER",
+      "$CGPOWER",
+      "CGPOWER"
+    ],
+    "CANBK": [
+      "Canara Bank",
+      "NSE:CANBK",
+      "$CANBK",
+      "CANBK"
+    ],
+    "CHOLAFIN": [
+      "Cholamandalam Investment and Finance Company Ltd.",
+      "Cholamandalam Investment and Finance Company",
+      "NSE:CHOLAFIN",
+      "$CHOLAFIN",
+      "CHOLAFIN"
+    ],
+    "CIPLA": [
+      "Cipla Ltd.",
+      "Cipla",
+      "NSE:CIPLA",
+      "$CIPLA"
+    ],
+    "COALINDIA": [
+      "Coal India Ltd.",
+      "Coal India",
+      "NSE:COALINDIA",
+      "$COALINDIA",
+      "COALINDIA"
+    ],
+    "COCHINSHIP": [
+      "Cochin Shipyard Ltd.",
+      "Cochin Shipyard",
+      "NSE:COCHINSHIP",
+      "$COCHINSHIP",
+      "COCHINSHIP"
+    ],
+    "COFORGE": [
+      "Coforge Ltd.",
+      "Coforge",
+      "NSE:COFORGE",
+      "$COFORGE"
+    ],
+    "COLPAL": [
+      "Colgate Palmolive (India) Ltd.",
+      "Colgate Palmolive (India)",
+      "Colgate Palmolive",
+      "NSE:COLPAL",
+      "$COLPAL",
+      "COLPAL"
+    ],
+    "CONCOR": [
+      "Container Corporation of India Ltd.",
+      "Container Corporation of India",
+      "NSE:CONCOR",
+      "$CONCOR",
+      "CONCOR"
+    ],
+    "COROMANDEL": [
+      "Coromandel International Ltd.",
+      "Coromandel International",
+      "NSE:COROMANDEL",
+      "$COROMANDEL",
+      "COROMANDEL"
+    ],
+    "CUMMINSIND": [
+      "Cummins India Ltd.",
+      "Cummins India",
+      "NSE:CUMMINSIND",
+      "$CUMMINSIND",
+      "CUMMINSIND"
+    ],
+    "DLF": [
+      "DLF Ltd.",
+      "DLF",
+      "NSE:DLF",
+      "$DLF"
+    ],
+    "DABUR": [
+      "Dabur India Ltd.",
+      "Dabur India",
+      "NSE:DABUR",
+      "$DABUR",
+      "DABUR"
+    ],
+    "DIVISLAB": [
+      "Divi's Laboratories Ltd.",
+      "Divi's Laboratories",
+      "NSE:DIVISLAB",
+      "$DIVISLAB",
+      "DIVISLAB"
+    ],
+    "DIXON": [
+      "Dixon Technologies (India) Ltd.",
+      "Dixon Technologies (India)",
+      "Dixon Technologies",
+      "NSE:DIXON",
+      "$DIXON",
+      "DIXON"
+    ],
+    "DRREDDY": [
+      "Dr. Reddy's Laboratories Ltd.",
+      "Dr. Reddy's Laboratories",
+      "NSE:DRREDDY",
+      "$DRREDDY",
+      "DRREDDY"
+    ],
+    "EICHERMOT": [
+      "Eicher Motors Ltd.",
+      "Eicher Motors",
+      "NSE:EICHERMOT",
+      "$EICHERMOT",
+      "EICHERMOT"
+    ],
+    "ETERNAL": [
+      "Eternal Ltd.",
+      "NSE:ETERNAL",
+      "$ETERNAL"
+    ],
+    "EXIDEIND": [
+      "Exide Industries Ltd.",
+      "Exide Industries",
+      "NSE:EXIDEIND",
+      "$EXIDEIND",
+      "EXIDEIND"
+    ],
+    "NYKAA": [
+      "FSN E-Commerce Ventures Ltd.",
+      "FSN E-Commerce Ventures",
+      "NSE:NYKAA",
+      "$NYKAA",
+      "NYKAA"
+    ],
+    "FEDERALBNK": [
+      "Federal Bank Ltd.",
+      "Federal Bank",
+      "NSE:FEDERALBNK",
+      "$FEDERALBNK",
+      "FEDERALBNK"
+    ],
+    "FORTIS": [
+      "Fortis Healthcare Ltd.",
+      "Fortis Healthcare",
+      "NSE:FORTIS",
+      "$FORTIS",
+      "FORTIS"
+    ],
+    "GAIL": [
+      "GAIL (India) Ltd.",
+      "GAIL (India)",
+      "GAIL",
+      "NSE:GAIL",
+      "$GAIL"
+    ],
+    "GVT&D": [
+      "GE Vernova T&D India Ltd.",
+      "GE Vernova T&D India",
+      "NSE:GVT&D",
+      "$GVT&D",
+      "GVT&D"
+    ],
+    "GMRAIRPORT": [
+      "GMR Airports Ltd.",
+      "GMR Airports",
+      "NSE:GMRAIRPORT",
+      "$GMRAIRPORT",
+      "GMRAIRPORT"
+    ],
+    "GLENMARK": [
+      "Glenmark Pharmaceuticals Ltd.",
+      "Glenmark Pharmaceuticals",
+      "NSE:GLENMARK",
+      "$GLENMARK",
+      "GLENMARK"
+    ],
+    "GODFRYPHLP": [
+      "Godfrey Phillips India Ltd.",
+      "Godfrey Phillips India",
+      "NSE:GODFRYPHLP",
+      "$GODFRYPHLP",
+      "GODFRYPHLP"
+    ],
+    "GODREJCP": [
+      "Godrej Consumer Products Ltd.",
+      "Godrej Consumer Products",
+      "NSE:GODREJCP",
+      "$GODREJCP",
+      "GODREJCP"
+    ],
+    "GODREJPROP": [
+      "Godrej Properties Ltd.",
+      "Godrej Properties",
+      "NSE:GODREJPROP",
+      "$GODREJPROP",
+      "GODREJPROP"
+    ],
+    "GRASIM": [
+      "Grasim Industries Ltd.",
+      "Grasim Industries",
+      "NSE:GRASIM",
+      "$GRASIM",
+      "GRASIM"
+    ],
+    "HCLTECH": [
+      "HCL Technologies Ltd.",
+      "HCL Technologies",
+      "NSE:HCLTECH",
+      "$HCLTECH",
+      "HCLTECH",
+      "HCL Tech"
+    ],
+    "HDFCAMC": [
+      "HDFC Asset Management Company Ltd.",
+      "HDFC Asset Management Company",
+      "NSE:HDFCAMC",
+      "$HDFCAMC",
+      "HDFCAMC"
+    ],
+    "HDFCBANK": [
+      "HDFC Bank Ltd.",
+      "HDFC Bank",
+      "NSE:HDFCBANK",
+      "$HDFCBANK",
+      "HDFCBANK"
+    ],
+    "HDFCLIFE": [
+      "HDFC Life Insurance Company Ltd.",
+      "HDFC Life Insurance Company",
+      "NSE:HDFCLIFE",
+      "$HDFCLIFE",
+      "HDFCLIFE"
+    ],
+    "HAVELLS": [
+      "Havells India Ltd.",
+      "Havells India",
+      "NSE:HAVELLS",
+      "$HAVELLS",
+      "HAVELLS"
+    ],
+    "HEROMOTOCO": [
+      "Hero MotoCorp Ltd.",
+      "Hero MotoCorp",
+      "NSE:HEROMOTOCO",
+      "$HEROMOTOCO",
+      "HEROMOTOCO"
+    ],
+    "HINDALCO": [
+      "Hindalco Industries Ltd.",
+      "Hindalco Industries",
+      "NSE:HINDALCO",
+      "$HINDALCO",
+      "HINDALCO"
+    ],
+    "HAL": [
+      "Hindustan Aeronautics Ltd.",
+      "Hindustan Aeronautics",
+      "NSE:HAL",
+      "$HAL",
+      "HAL"
+    ],
+    "HINDPETRO": [
+      "Hindustan Petroleum Corporation Ltd.",
+      "Hindustan Petroleum Corporation",
+      "NSE:HINDPETRO",
+      "$HINDPETRO",
+      "HINDPETRO"
+    ],
+    "HINDUNILVR": [
+      "Hindustan Unilever Ltd.",
+      "Hindustan Unilever",
+      "NSE:HINDUNILVR",
+      "$HINDUNILVR",
+      "HINDUNILVR"
+    ],
+    "HINDZINC": [
+      "Hindustan Zinc Ltd.",
+      "Hindustan Zinc",
+      "NSE:HINDZINC",
+      "$HINDZINC",
+      "HINDZINC"
+    ],
+    "POWERINDIA": [
+      "Hitachi Energy India Ltd.",
+      "Hitachi Energy India",
+      "NSE:POWERINDIA",
+      "$POWERINDIA",
+      "POWERINDIA"
+    ],
+    "HUDCO": [
+      "Housing & Urban Development Corporation Ltd.",
+      "Housing & Urban Development Corporation",
+      "NSE:HUDCO",
+      "$HUDCO",
+      "HUDCO"
+    ],
+    "HYUNDAI": [
+      "Hyundai Motor India Ltd.",
+      "Hyundai Motor India",
+      "NSE:HYUNDAI",
+      "$HYUNDAI",
+      "HYUNDAI"
+    ],
+    "ICICIBANK": [
+      "ICICI Bank Ltd.",
+      "ICICI Bank",
+      "NSE:ICICIBANK",
+      "$ICICIBANK",
+      "ICICIBANK"
+    ],
+    "ICICIGI": [
+      "ICICI Lombard General Insurance Company Ltd.",
+      "ICICI Lombard General Insurance Company",
+      "NSE:ICICIGI",
+      "$ICICIGI",
+      "ICICIGI"
+    ],
+    "ICICIAMC": [
+      "ICICI Prudential Asset Management Company Ltd.",
+      "ICICI Prudential Asset Management Company",
+      "NSE:ICICIAMC",
+      "$ICICIAMC",
+      "ICICIAMC"
+    ],
+    "IDFCFIRSTB": [
+      "IDFC First Bank Ltd.",
+      "IDFC First Bank",
+      "NSE:IDFCFIRSTB",
+      "$IDFCFIRSTB",
+      "IDFCFIRSTB"
+    ],
+    "ITC": [
+      "ITC Ltd.",
+      "ITC",
+      "NSE:ITC",
+      "$ITC",
+      "ITC Limited",
+      "ITC Ltd"
+    ],
+    "INDIANB": [
+      "Indian Bank",
+      "NSE:INDIANB",
+      "$INDIANB",
+      "INDIANB"
+    ],
+    "INDHOTEL": [
+      "Indian Hotels Co. Ltd.",
+      "Indian Hotels Co.",
+      "NSE:INDHOTEL",
+      "$INDHOTEL",
+      "INDHOTEL"
+    ],
+    "IOC": [
+      "Indian Oil Corporation Ltd.",
+      "Indian Oil Corporation",
+      "NSE:IOC",
+      "$IOC",
+      "IOC"
+    ],
+    "IRCTC": [
+      "Indian Railway Catering And Tourism Corporation Ltd.",
+      "Indian Railway Catering And Tourism Corporation",
+      "NSE:IRCTC",
+      "$IRCTC",
+      "IRCTC"
+    ],
+    "IRFC": [
+      "Indian Railway Finance Corporation Ltd.",
+      "Indian Railway Finance Corporation",
+      "NSE:IRFC",
+      "$IRFC",
+      "IRFC"
+    ],
+    "IREDA": [
+      "Indian Renewable Energy Development Agency Ltd.",
+      "Indian Renewable Energy Development Agency",
+      "NSE:IREDA",
+      "$IREDA",
+      "IREDA"
+    ],
+    "INDUSTOWER": [
+      "Indus Towers Ltd.",
+      "Indus Towers",
+      "NSE:INDUSTOWER",
+      "$INDUSTOWER",
+      "INDUSTOWER"
+    ],
+    "INDUSINDBK": [
+      "IndusInd Bank Ltd.",
+      "IndusInd Bank",
+      "NSE:INDUSINDBK",
+      "$INDUSINDBK",
+      "INDUSINDBK"
+    ],
+    "NAUKRI": [
+      "Info Edge (India) Ltd.",
+      "Info Edge (India)",
+      "Info Edge",
+      "NSE:NAUKRI",
+      "$NAUKRI",
+      "NAUKRI"
+    ],
+    "INFY": [
+      "Infosys Ltd.",
+      "Infosys",
+      "NSE:INFY",
+      "$INFY",
+      "INFY"
+    ],
+    "INDIGO": [
+      "InterGlobe Aviation Ltd.",
+      "InterGlobe Aviation",
+      "NSE:INDIGO",
+      "$INDIGO",
+      "INDIGO"
+    ],
+    "JSWENERGY": [
+      "JSW Energy Ltd.",
+      "JSW Energy",
+      "NSE:JSWENERGY",
+      "$JSWENERGY",
+      "JSWENERGY"
+    ],
+    "JSWSTEEL": [
+      "JSW Steel Ltd.",
+      "JSW Steel",
+      "NSE:JSWSTEEL",
+      "$JSWSTEEL",
+      "JSWSTEEL"
+    ],
+    "JINDALSTEL": [
+      "Jindal Steel Ltd.",
+      "Jindal Steel",
+      "NSE:JINDALSTEL",
+      "$JINDALSTEL",
+      "JINDALSTEL"
+    ],
+    "JIOFIN": [
+      "Jio Financial Services Ltd.",
+      "Jio Financial Services",
+      "NSE:JIOFIN",
+      "$JIOFIN",
+      "JIOFIN"
+    ],
+    "JUBLFOOD": [
+      "Jubilant Foodworks Ltd.",
+      "Jubilant Foodworks",
+      "NSE:JUBLFOOD",
+      "$JUBLFOOD",
+      "JUBLFOOD"
+    ],
+    "KEI": [
+      "KEI Industries Ltd.",
+      "KEI Industries",
+      "NSE:KEI",
+      "$KEI",
+      "KEI"
+    ],
+    "KPITTECH": [
+      "KPIT Technologies Ltd.",
+      "KPIT Technologies",
+      "NSE:KPITTECH",
+      "$KPITTECH",
+      "KPITTECH"
+    ],
+    "KALYANKJIL": [
+      "Kalyan Jewellers India Ltd.",
+      "Kalyan Jewellers India",
+      "NSE:KALYANKJIL",
+      "$KALYANKJIL",
+      "KALYANKJIL"
+    ],
+    "KOTAKBANK": [
+      "Kotak Mahindra Bank Ltd.",
+      "Kotak Mahindra Bank",
+      "NSE:KOTAKBANK",
+      "$KOTAKBANK",
+      "KOTAKBANK",
+      "Kotak Bank"
+    ],
+    "LTF": [
+      "L&T Finance Ltd.",
+      "L&T Finance",
+      "NSE:LTF",
+      "$LTF",
+      "LTF"
+    ],
+    "LGEINDIA": [
+      "LG Electronics India Ltd.",
+      "LG Electronics India",
+      "NSE:LGEINDIA",
+      "$LGEINDIA",
+      "LGEINDIA"
+    ],
+    "LICHSGFIN": [
+      "LIC Housing Finance Ltd.",
+      "LIC Housing Finance",
+      "NSE:LICHSGFIN",
+      "$LICHSGFIN",
+      "LICHSGFIN"
+    ],
+    "LTM": [
+      "LTM Ltd.",
+      "LTM",
+      "NSE:LTM",
+      "$LTM"
+    ],
+    "LT": [
+      "Larsen & Toubro Ltd.",
+      "Larsen & Toubro",
+      "NSE:LT",
+      "$LT",
+      "L&T"
+    ],
+    "LAURUSLABS": [
+      "Laurus Labs Ltd.",
+      "Laurus Labs",
+      "NSE:LAURUSLABS",
+      "$LAURUSLABS",
+      "LAURUSLABS"
+    ],
+    "LENSKART": [
+      "Lenskart Solutions Ltd.",
+      "Lenskart Solutions",
+      "NSE:LENSKART",
+      "$LENSKART",
+      "LENSKART"
+    ],
+    "LODHA": [
+      "Lodha Developers Ltd.",
+      "Lodha Developers",
+      "NSE:LODHA",
+      "$LODHA",
+      "LODHA"
+    ],
+    "LUPIN": [
+      "Lupin Ltd.",
+      "Lupin",
+      "NSE:LUPIN",
+      "$LUPIN"
+    ],
+    "MRF": [
+      "MRF Ltd.",
+      "MRF",
+      "NSE:MRF",
+      "$MRF"
+    ],
+    "M&MFIN": [
+      "Mahindra & Mahindra Financial Services Ltd.",
+      "Mahindra & Mahindra Financial Services",
+      "NSE:M&MFIN",
+      "$M&MFIN",
+      "M&MFIN"
+    ],
+    "M&M": [
+      "Mahindra & Mahindra Ltd.",
+      "Mahindra & Mahindra",
+      "NSE:M&M",
+      "$M&M",
+      "M&M"
+    ],
+    "MANKIND": [
+      "Mankind Pharma Ltd.",
+      "Mankind Pharma",
+      "NSE:MANKIND",
+      "$MANKIND"
+    ],
+    "MARICO": [
+      "Marico Ltd.",
+      "Marico",
+      "NSE:MARICO",
+      "$MARICO"
+    ],
+    "MARUTI": [
+      "Maruti Suzuki India Ltd.",
+      "Maruti Suzuki India",
+      "NSE:MARUTI",
+      "$MARUTI",
+      "MARUTI",
+      "Maruti Suzuki"
+    ],
+    "MFSL": [
+      "Max Financial Services Ltd.",
+      "Max Financial Services",
+      "NSE:MFSL",
+      "$MFSL",
+      "MFSL"
+    ],
+    "MAXHEALTH": [
+      "Max Healthcare Institute Ltd.",
+      "Max Healthcare Institute",
+      "NSE:MAXHEALTH",
+      "$MAXHEALTH",
+      "MAXHEALTH"
+    ],
+    "MAZDOCK": [
+      "Mazagoan Dock Shipbuilders Ltd.",
+      "Mazagoan Dock Shipbuilders",
+      "NSE:MAZDOCK",
+      "$MAZDOCK",
+      "MAZDOCK"
+    ],
+    "MOTILALOFS": [
+      "Motilal Oswal Financial Services Ltd.",
+      "Motilal Oswal Financial Services",
+      "NSE:MOTILALOFS",
+      "$MOTILALOFS",
+      "MOTILALOFS"
+    ],
+    "MPHASIS": [
+      "MphasiS Ltd.",
+      "MphasiS",
+      "NSE:MPHASIS",
+      "$MPHASIS"
+    ],
+    "MCX": [
+      "Multi Commodity Exchange of India Ltd.",
+      "Multi Commodity Exchange of India",
+      "NSE:MCX",
+      "$MCX",
+      "MCX"
+    ],
+    "MUTHOOTFIN": [
+      "Muthoot Finance Ltd.",
+      "Muthoot Finance",
+      "NSE:MUTHOOTFIN",
+      "$MUTHOOTFIN",
+      "MUTHOOTFIN"
+    ],
+    "NHPC": [
+      "NHPC Ltd.",
+      "NHPC",
+      "NSE:NHPC",
+      "$NHPC"
+    ],
+    "NMDC": [
+      "NMDC Ltd.",
+      "NMDC",
+      "NSE:NMDC",
+      "$NMDC"
+    ],
+    "NTPC": [
+      "NTPC Ltd.",
+      "NTPC",
+      "NSE:NTPC",
+      "$NTPC"
+    ],
+    "NATIONALUM": [
+      "National Aluminium Co. Ltd.",
+      "National Aluminium Co.",
+      "NSE:NATIONALUM",
+      "$NATIONALUM",
+      "NATIONALUM"
+    ],
+    "NESTLEIND": [
+      "Nestle India Ltd.",
+      "Nestle India",
+      "NSE:NESTLEIND",
+      "$NESTLEIND",
+      "NESTLEIND"
+    ],
+    "OBEROIRLTY": [
+      "Oberoi Realty Ltd.",
+      "Oberoi Realty",
+      "NSE:OBEROIRLTY",
+      "$OBEROIRLTY",
+      "OBEROIRLTY"
+    ],
+    "ONGC": [
+      "Oil & Natural Gas Corporation Ltd.",
+      "Oil & Natural Gas Corporation",
+      "NSE:ONGC",
+      "$ONGC",
+      "ONGC"
+    ],
+    "OIL": [
+      "Oil India Ltd.",
+      "Oil India",
+      "NSE:OIL",
+      "$OIL"
+    ],
+    "PAYTM": [
+      "One 97 Communications Ltd.",
+      "One 97 Communications",
+      "NSE:PAYTM",
+      "$PAYTM",
+      "PAYTM"
+    ],
+    "OFSS": [
+      "Oracle Financial Services Software Ltd.",
+      "Oracle Financial Services Software",
+      "NSE:OFSS",
+      "$OFSS",
+      "OFSS"
+    ],
+    "POLICYBZR": [
+      "PB Fintech Ltd.",
+      "PB Fintech",
+      "NSE:POLICYBZR",
+      "$POLICYBZR",
+      "POLICYBZR"
+    ],
+    "PIIND": [
+      "PI Industries Ltd.",
+      "PI Industries",
+      "NSE:PIIND",
+      "$PIIND",
+      "PIIND"
+    ],
+    "PAGEIND": [
+      "Page Industries Ltd.",
+      "Page Industries",
+      "NSE:PAGEIND",
+      "$PAGEIND",
+      "PAGEIND"
+    ],
+    "PATANJALI": [
+      "Patanjali Foods Ltd.",
+      "Patanjali Foods",
+      "NSE:PATANJALI",
+      "$PATANJALI",
+      "PATANJALI"
+    ],
+    "PERSISTENT": [
+      "Persistent Systems Ltd.",
+      "Persistent Systems",
+      "NSE:PERSISTENT",
+      "$PERSISTENT",
+      "PERSISTENT"
+    ],
+    "PHOENIXLTD": [
+      "Phoenix Mills Ltd.",
+      "Phoenix Mills",
+      "NSE:PHOENIXLTD",
+      "$PHOENIXLTD",
+      "PHOENIXLTD"
+    ],
+    "PIDILITIND": [
+      "Pidilite Industries Ltd.",
+      "Pidilite Industries",
+      "NSE:PIDILITIND",
+      "$PIDILITIND",
+      "PIDILITIND"
+    ],
+    "POLYCAB": [
+      "Polycab India Ltd.",
+      "Polycab India",
+      "NSE:POLYCAB",
+      "$POLYCAB",
+      "POLYCAB"
+    ],
+    "PFC": [
+      "Power Finance Corporation Ltd.",
+      "Power Finance Corporation",
+      "NSE:PFC",
+      "$PFC",
+      "PFC"
+    ],
+    "POWERGRID": [
+      "Power Grid Corporation of India Ltd.",
+      "Power Grid Corporation of India",
+      "NSE:POWERGRID",
+      "$POWERGRID",
+      "POWERGRID"
+    ],
+    "PREMIERENE": [
+      "Premier Energies Ltd.",
+      "Premier Energies",
+      "NSE:PREMIERENE",
+      "$PREMIERENE",
+      "PREMIERENE"
+    ],
+    "PRESTIGE": [
+      "Prestige Estates Projects Ltd.",
+      "Prestige Estates Projects",
+      "NSE:PRESTIGE",
+      "$PRESTIGE",
+      "PRESTIGE"
+    ],
+    "PNB": [
+      "Punjab National Bank",
+      "NSE:PNB",
+      "$PNB",
+      "PNB"
+    ],
+    "RECLTD": [
+      "REC Ltd.",
+      "REC",
+      "NSE:RECLTD",
+      "$RECLTD",
+      "RECLTD"
+    ],
+    "RADICO": [
+      "Radico Khaitan Ltd",
+      "Radico Khaitan",
+      "NSE:RADICO",
+      "$RADICO",
+      "RADICO"
+    ],
+    "RVNL": [
+      "Rail Vikas Nigam Ltd.",
+      "Rail Vikas Nigam",
+      "NSE:RVNL",
+      "$RVNL",
+      "RVNL"
+    ],
+    "RELIANCE": [
+      "Reliance Industries Ltd.",
+      "Reliance Industries",
+      "NSE:RELIANCE",
+      "$RELIANCE",
+      "RELIANCE",
+      "RIL"
+    ],
+    "SBICARD": [
+      "SBI Cards and Payment Services Ltd.",
+      "SBI Cards and Payment Services",
+      "NSE:SBICARD",
+      "$SBICARD",
+      "SBICARD"
+    ],
+    "SBILIFE": [
+      "SBI Life Insurance Company Ltd.",
+      "SBI Life Insurance Company",
+      "NSE:SBILIFE",
+      "$SBILIFE",
+      "SBILIFE"
+    ],
+    "SRF": [
+      "SRF Ltd.",
+      "SRF",
+      "NSE:SRF",
+      "$SRF"
+    ],
+    "MOTHERSON": [
+      "Samvardhana Motherson International Ltd.",
+      "Samvardhana Motherson International",
+      "NSE:MOTHERSON",
+      "$MOTHERSON",
+      "MOTHERSON"
+    ],
+    "SHREECEM": [
+      "Shree Cement Ltd.",
+      "Shree Cement",
+      "NSE:SHREECEM",
+      "$SHREECEM",
+      "SHREECEM"
+    ],
+    "SHRIRAMFIN": [
+      "Shriram Finance Ltd.",
+      "Shriram Finance",
+      "NSE:SHRIRAMFIN",
+      "$SHRIRAMFIN",
+      "SHRIRAMFIN"
+    ],
+    "ENRIN": [
+      "Siemens Energy India Ltd.",
+      "Siemens Energy India",
+      "NSE:ENRIN",
+      "$ENRIN",
+      "ENRIN"
+    ],
+    "SIEMENS": [
+      "Siemens Ltd.",
+      "Siemens",
+      "NSE:SIEMENS",
+      "$SIEMENS"
+    ],
+    "SOLARINDS": [
+      "Solar Industries India Ltd.",
+      "Solar Industries India",
+      "NSE:SOLARINDS",
+      "$SOLARINDS",
+      "SOLARINDS"
+    ],
+    "SBIN": [
+      "State Bank of India",
+      "NSE:SBIN",
+      "$SBIN",
+      "SBIN",
+      "SBI"
+    ],
+    "SAIL": [
+      "Steel Authority of India Ltd.",
+      "Steel Authority of India",
+      "NSE:SAIL",
+      "$SAIL",
+      "SAIL"
+    ],
+    "SUNPHARMA": [
+      "Sun Pharmaceutical Industries Ltd.",
+      "Sun Pharmaceutical Industries",
+      "NSE:SUNPHARMA",
+      "$SUNPHARMA",
+      "SUNPHARMA",
+      "Sun Pharmaceutical",
+      "Sun Pharma"
+    ],
+    "SUPREMEIND": [
+      "Supreme Industries Ltd.",
+      "Supreme Industries",
+      "NSE:SUPREMEIND",
+      "$SUPREMEIND",
+      "SUPREMEIND"
+    ],
+    "SUZLON": [
+      "Suzlon Energy Ltd.",
+      "Suzlon Energy",
+      "NSE:SUZLON",
+      "$SUZLON",
+      "SUZLON"
+    ],
+    "SWIGGY": [
+      "Swiggy Ltd.",
+      "Swiggy",
+      "NSE:SWIGGY",
+      "$SWIGGY"
+    ],
+    "TVSMOTOR": [
+      "TVS Motor Company Ltd.",
+      "TVS Motor Company",
+      "NSE:TVSMOTOR",
+      "$TVSMOTOR",
+      "TVSMOTOR"
+    ],
+    "TATACAP": [
+      "Tata Capital Ltd.",
+      "Tata Capital",
+      "NSE:TATACAP",
+      "$TATACAP",
+      "TATACAP"
+    ],
+    "TATACOMM": [
+      "Tata Communications Ltd.",
+      "Tata Communications",
+      "NSE:TATACOMM",
+      "$TATACOMM",
+      "TATACOMM"
+    ],
+    "TCS": [
+      "Tata Consultancy Services Ltd.",
+      "Tata Consultancy Services",
+      "NSE:TCS",
+      "$TCS",
+      "TCS"
+    ],
+    "TATACONSUM": [
+      "Tata Consumer Products Ltd.",
+      "Tata Consumer Products",
+      "NSE:TATACONSUM",
+      "$TATACONSUM",
+      "TATACONSUM"
+    ],
+    "TATAELXSI": [
+      "Tata Elxsi Ltd.",
+      "Tata Elxsi",
+      "NSE:TATAELXSI",
+      "$TATAELXSI",
+      "TATAELXSI"
+    ],
+    "TATAINVEST": [
+      "Tata Investment Corporation Ltd.",
+      "Tata Investment Corporation",
+      "NSE:TATAINVEST",
+      "$TATAINVEST",
+      "TATAINVEST"
+    ],
+    "TMCV": [
+      "Tata Motors Ltd.",
+      "Tata Motors",
+      "NSE:TMCV",
+      "$TMCV",
+      "TMCV"
+    ],
+    "TMPV": [
+      "Tata Motors Passenger Vehicles Ltd.",
+      "Tata Motors Passenger Vehicles",
+      "NSE:TMPV",
+      "$TMPV",
+      "TMPV"
+    ],
+    "TATAPOWER": [
+      "Tata Power Co. Ltd.",
+      "Tata Power Co.",
+      "NSE:TATAPOWER",
+      "$TATAPOWER",
+      "TATAPOWER"
+    ],
+    "TATASTEEL": [
+      "Tata Steel Ltd.",
+      "Tata Steel",
+      "NSE:TATASTEEL",
+      "$TATASTEEL",
+      "TATASTEEL"
+    ],
+    "TECHM": [
+      "Tech Mahindra Ltd.",
+      "Tech Mahindra",
+      "NSE:TECHM",
+      "$TECHM",
+      "TECHM"
+    ],
+    "TITAN": [
+      "Titan Company Ltd.",
+      "Titan Company",
+      "NSE:TITAN",
+      "$TITAN",
+      "TITAN"
+    ],
+    "TORNTPHARM": [
+      "Torrent Pharmaceuticals Ltd.",
+      "Torrent Pharmaceuticals",
+      "NSE:TORNTPHARM",
+      "$TORNTPHARM",
+      "TORNTPHARM"
+    ],
+    "TRENT": [
+      "Trent Ltd.",
+      "Trent",
+      "NSE:TRENT",
+      "$TRENT"
+    ],
+    "TIINDIA": [
+      "Tube Investments of India Ltd.",
+      "Tube Investments of India",
+      "NSE:TIINDIA",
+      "$TIINDIA",
+      "TIINDIA"
+    ],
+    "UPL": [
+      "UPL Ltd.",
+      "UPL",
+      "NSE:UPL",
+      "$UPL"
+    ],
+    "ULTRACEMCO": [
+      "UltraTech Cement Ltd.",
+      "UltraTech Cement",
+      "NSE:ULTRACEMCO",
+      "$ULTRACEMCO",
+      "ULTRACEMCO"
+    ],
+    "UNIONBANK": [
+      "Union Bank of India",
+      "NSE:UNIONBANK",
+      "$UNIONBANK",
+      "UNIONBANK"
+    ],
+    "UNITDSPR": [
+      "United Spirits Ltd.",
+      "United Spirits",
+      "NSE:UNITDSPR",
+      "$UNITDSPR",
+      "UNITDSPR"
+    ],
+    "VBL": [
+      "Varun Beverages Ltd.",
+      "Varun Beverages",
+      "NSE:VBL",
+      "$VBL",
+      "VBL"
+    ],
+    "VEDL": [
+      "Vedanta Ltd.",
+      "Vedanta",
+      "NSE:VEDL",
+      "$VEDL",
+      "VEDL"
+    ],
+    "VMM": [
+      "Vishal Mega Mart Ltd.",
+      "Vishal Mega Mart",
+      "NSE:VMM",
+      "$VMM",
+      "VMM"
+    ],
+    "IDEA": [
+      "Vodafone Idea Ltd.",
+      "Vodafone Idea",
+      "NSE:IDEA",
+      "$IDEA"
+    ],
+    "VOLTAS": [
+      "Voltas Ltd.",
+      "Voltas",
+      "NSE:VOLTAS",
+      "$VOLTAS"
+    ],
+    "WAAREEENER": [
+      "Waaree Energies Ltd.",
+      "Waaree Energies",
+      "NSE:WAAREEENER",
+      "$WAAREEENER",
+      "WAAREEENER"
+    ],
+    "WIPRO": [
+      "Wipro Ltd.",
+      "Wipro",
+      "NSE:WIPRO",
+      "$WIPRO"
+    ],
+    "YESBANK": [
+      "Yes Bank Ltd.",
+      "Yes Bank",
+      "NSE:YESBANK",
+      "$YESBANK",
+      "YESBANK"
+    ],
+    "ZYDUSLIFE": [
+      "Zydus Lifesciences Ltd.",
+      "Zydus Lifesciences",
+      "NSE:ZYDUSLIFE",
+      "$ZYDUSLIFE",
+      "ZYDUSLIFE"
+    ]
   }
 }

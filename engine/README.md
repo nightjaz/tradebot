@@ -31,3 +31,13 @@ Curated RSS/Atom sources are configured in `config/blogs.json`. The connector ne
 ```powershell
 python engine/ingest_blogs.py
 ```
+
+## Stock universe
+
+`config/nifty200.csv` is a dated snapshot of the official Nifty 200 constituent file. Regenerate `config/symbol_aliases.json` after refreshing that CSV:
+
+```powershell
+python engine/sync_nifty_universe.py
+```
+
+The generator requires exactly 200 unique symbols, merges curated brand-name overrides, and avoids plain-text matching for ambiguous tickers such as BSE, IDEA, OIL, and PAGE.
