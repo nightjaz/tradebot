@@ -1,5 +1,7 @@
 # EdgeSignal engine
 
+> Daily cross-sectional research (signals → IC → market-neutral long-short backtest with leakage checks): see [research/README.md](research/README.md), run with `python engine/run_backtest.py`.
+
 Research/paper-trading engine for intraday NSE strategies. It uses only information available at the bar timestamp, fills entries on the next bar, models fees and adverse slippage, and stores every event, signal and fill in SQLite.
 
 Run the deterministic demo from the repository root:
